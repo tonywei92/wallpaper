@@ -90,7 +90,7 @@ Returns a promise for the available screens.
 ## Related
 
 - [macos-wallpaper](https://github.com/sindresorhus/macos-wallpaper) - macOS binary used in this module
-- [win-wallpaper](https://github.com/tonywei92/winwallpaper) - Windows binary used in this module
+- [winwallpaper](https://github.com/tonywei92/winwallpaper) - Windows binary used in this module
 
 
 ## License

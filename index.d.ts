@@ -23,11 +23,11 @@ declare namespace wallpaper {
 		readonly screen?: 'all' | 'main' | number;
 
 		/**
-		__macOS only.__
+		__macOS and Windows only.__
 
 		Scaling method. Values: `auto` `fill` `fit` `stretch` `center`.
 
-		@default 'auto'
+		@default 'fill'
 		*/
 		readonly scale?: 'auto' | 'fill' | 'fit' | 'stretch' | 'center';
 	}

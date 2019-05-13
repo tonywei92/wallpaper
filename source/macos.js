@@ -1,5 +1,5 @@
 'use strict';
-const {promisify} = require('util');
+const { promisify } = require('util');
 const path = require('path');
 const childProcess = require('child_process');
 
@@ -9,7 +9,7 @@ const execFile = promisify(childProcess.execFile);
 const binary = path.join(__dirname, 'macos-wallpaper');
 
 exports.get = async () => {
-	const {stdout} = await execFile(binary, ['get']);
+	const { stdout } = await execFile(binary, ['get']);
 	return stdout.trim();
 };
 
@@ -20,7 +20,7 @@ exports.set = async (imagePath, options) => {
 
 	options = {
 		screen: 'all',
-		scale: 'auto',
+		scale: 'fill',
 		...options
 	};
 
@@ -37,6 +37,6 @@ exports.set = async (imagePath, options) => {
 };
 
 exports.screens = async () => {
-	const {stdout} = await execFile(binary, ['screens']);
+	const { stdout } = await execFile(binary, ['screens']);
 	return stdout.trim().split('\n').map(line => line.replace(/^\d+ - /, ''));
 };

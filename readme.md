@@ -2,9 +2,7 @@
 
 > Get or set the desktop wallpaper
 
-Works on macOS 10.12+, Linux, and Windows 10+.
-
-*Maintainer needed for the Linux part of the code. No new Linux-related changes will be accepted until someone with good Linux knowledge volunteers.*
+Works on macOS 10.12+, Linux, and ~~Windows 10+~~ Windows 7+.
 
 
 ## Install
@@ -12,11 +10,6 @@ Works on macOS 10.12+, Linux, and Windows 10+.
 ```
 $ npm install wallpaper
 ```
-
-<a href="https://www.patreon.com/sindresorhus">
-	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
-</a>
-
 
 ## Usage
 
@@ -74,11 +67,11 @@ The screen to set the wallpaper on.
 
 *On Linux and Windows it's hard-coded to `main`.*
 
-##### scale *(macOS only)*
+##### scale ~~macOS only~~ macOS and Windows
 
 Type: `string`<br>
-Values: `auto` `fill` `fit` `stretch` `center`<br>
-Default: `auto`
+Values: `auto` `fill` `fit` `stretch` `center` `tile`<br>
+Default: `fill`
 
 Scaling method.
 
@@ -96,12 +89,10 @@ Returns a promise for the available screens.
 
 ## Related
 
-- [wallpaper-cli](https://github.com/sindresorhus/wallpaper-cli) - CLI for this module
 - [macos-wallpaper](https://github.com/sindresorhus/macos-wallpaper) - macOS binary used in this module
-- [win-wallpaper](https://github.com/sindresorhus/win-wallpaper) - Windows binary used in this module
-- [trash](https://github.com/sindresorhus/trash) - Move files and directories to the trash
+- [win-wallpaper](https://github.com/tonywei92/winwallpaper) - Windows binary used in this module
 
 
 ## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+MIT © [Tony Song](https://tonywei92.github.io)

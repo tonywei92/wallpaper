@@ -1,19 +1,19 @@
 {
 	"name": "wallpaper",
-	"version": "4.4.0",
+	"version": "4.4.1",
 	"description": "Manage the desktop wallpaper",
 	"license": "MIT",
-	"repository": "sindresorhus/wallpaper",
+	"repository": "tonywei/wallpaper",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"name": "Tony Song",
+		"email": "tonywei92@gmail.com",
+		"url": "tonywei92.github.io"
 	},
 	"engines": {
 		"node": ">=8"
 	},
 	"scripts": {
-		"test": "xo && ava && tsd"
+		"test": "ava --verbose && tsd"
 	},
 	"files": [
 		"index.js",

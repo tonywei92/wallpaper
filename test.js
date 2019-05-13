@@ -8,7 +8,7 @@ test('main', async t => {
 	await wallpaper.set('fixture.jpg');
 	t.is(await wallpaper.get(), path.resolve('fixture.jpg'));
 
-	await wallpaper.set(orignalImagePath);
+	await wallpaper.set(orignalImagePath, { scale: "stretch" });
 });
 
 if (process.platform === 'darwin') {
